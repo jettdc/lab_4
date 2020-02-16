@@ -33,7 +33,26 @@
 					11. Submit Button (links to home page)
 
 			-->
-			<input type="submit" value="submit" class="btn btn-primary btn-block">
+			<div class="form-group form-control">
+				<label for="full_name">Full Name:</label>
+				<input type="text" id="full_name" name="field_name" placeholder="Enter Name">
+				<br>
+				<label for="email">Email Address:</label>
+				<input type="email" name="email" placeholder="Enter Email">
+				<br>
+				<label for="pass">Password:</label>
+				<input type="password" id="pass" name="field_name" placeholder="Enter Password">
+				<br>
+				<label for="">CU Alumni?:</label>
+				<input type="radio" name="CUA" value="Yes" checked> Yes
+				<input type="radio" name="CUA" value="No"> No
+				<br>
+				<label for="">CU Student?:</label>
+				<input type="radio" name="CUS" value="Yes" checked> Yes
+				<input type="radio" name="CUS" value="No"> No
+				<br>
+				<input type="submit" value="submit" class="btn btn-primary btn-block">
+			</div>
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
