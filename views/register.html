@@ -17,7 +17,7 @@
     <br>
 	<br>
 	<div class="container">
-		<form action="home.html">
+		<form class="form-horizontal" action="home.html">
 			<!--
 				Todo: Create a form with the following fields:
 					1. Name Text Field
@@ -33,26 +33,60 @@
 					11. Submit Button (links to home page)
 
 			-->
-			<div class="form-group form-control">
-				<label for="full_name">Full Name:</label>
-				<input type="text" id="full_name" name="field_name" placeholder="Enter Name">
-				<br>
-				<label for="email">Email Address:</label>
-				<input type="email" name="email" placeholder="Enter Email">
-				<br>
-				<label for="pass">Password:</label>
-				<input type="password" id="pass" name="field_name" placeholder="Enter Password">
-				<br>
-				<label for="">CU Alumni?:</label>
-				<input type="radio" name="CUA" value="Yes" checked> Yes
-				<input type="radio" name="CUA" value="No"> No
-				<br>
-				<label for="">CU Student?:</label>
-				<input type="radio" name="CUS" value="Yes" checked> Yes
-				<input type="radio" name="CUS" value="No"> No
-				<br>
+				<div class="form-group row">
+					<label class="control-label col-sm-2" for="name">Full Name:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="name" placeholder="Enter full name">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="control-label col-sm-2" for="email">Email:</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="email" placeholder="Enter email">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="control-label col-sm-2" for="pwd">Password:</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="control-label col-sm-2" for="CUA">CU Alumni?:</label>
+					<div class="col-sm-10">
+					<input type="radio" name="CUA" value="Yes" checked> Yes
+					<input type="radio" name="CUA" value="No"> No
+					</div>
+				</div>
+				<div class="form-group row">
+						<label class="control-label col-sm-2" for="CUS">CU Student?:</label>
+						<div class="col-sm-10">
+							<input type="radio" name="CUS" value="Yes" checked> Yes
+							<input type="radio" name="CUS" value="No"> No
+						</div>
+				</div>
+				<div class="form-group row">
+						<label class="control-label col-sm-2" for="SS">Student Status:</label>
+						<div class="col-sm-10">
+						<input type="radio" name="SS" value="Undergraduate" checked> Undergraduate
+						<select class="form-control" name="select_under">
+								<option selected>Select student status</option>
+								<option value="1">Freshman</option>
+								<option value="2">Sophomore</option>
+								<option value="3">Junior</option>
+								<option value="3">Senior</option>
+						</select>
+						<input type="radio" name="SS" value="Graduate"> Graduate
+						<select class="form-control" name="select_grad">
+								<option selected>Select student status</option>
+								<option value="1">5th year</option>
+								<option value="2">6th year</option>
+								<option value="3">7th year</option>
+								<option value="3">8th year</option>
+						</select>
+						</div>
+				</div>
 				<input type="submit" value="submit" class="btn btn-primary btn-block">
-			</div>
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
